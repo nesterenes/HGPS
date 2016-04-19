@@ -1,0 +1,173 @@
+﻿
+html {
+height: 100%;
+font-family: Geneva, Arial, Helvetica, sans-serif;
+font-size:12pt;
+color:#000000;
+
+}
+
+* {
+margin: 0;
+}
+
+
+
+.col-left {
+    float:left;
+    margin-right:5px;
+}
+    
+.col-right {
+    float:right; 
+    position:relative; 
+    width:23%; 
+    min-height:400px; 
+    padding:5px 4px 5px 7px; 
+    border:solid 1px #FFFFFF;
+
+}
+
+
+body 
+{
+    background: #CCCCCC;
+	/*background:#F49B4B url('../images/halloween-top-stars.png') repeat-x; 
+	/*background:#CCCCCC ;*/ 
+	height:100%;
+}
+
+#header {
+	/*background: url('../images/header-chiller.png') no-repeat; */ 
+	margin:20px auto 20px auto;
+	width: 450px;
+	height:80px;
+
+}
+
+#moon {
+	/*background: url('../images/moon.png') no-repeat; */
+	position:absolute;
+	height:117px;
+	width: 114px;
+	top: 00px;
+	left: 80%;
+	z-index:10;
+}
+
+#content-wrapper {	
+
+	min-height: 800px;
+	height: auto;
+	height: 100%;
+	margin: 0 auto -300px auto; /* the bottom margin is the negative value of the footer's height */
+	
+}
+
+#content-body {
+
+	min-width: 980px;
+    min-height: 400px;
+	height: auto;
+	margin:0 6% 320px 6%;
+	padding:20px;
+	text-align:left;
+
+	
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(255, 255, 255) transparent;
+	/* RGBa with 0.6 opacity */
+	background: rgba(255, 255, 255, .1);
+	 /*For IE 5.5 - 7*/
+	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#65FFFFFF, endColorstr=#65FFFFFF);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#10FFFFFF, endColorstr=#10FFFFFF)";
+}
+
+#footer {
+	/*background: url('../images/halloween-footer.png') repeat-x;*/
+	width:100%;
+	height:300px;
+	margin-top:20px;
+
+}
+/*
+#nav-wrapper { 
+    width:800px;
+    margin: 4px auto;
+    background: #ffffff;
+    height:42px;
+    
+}
+*/
+
+.nav-item li 
+{
+    float:left; 
+    display:block;
+    width:150px;
+    padding:5px 10px;
+    margin: 5px;
+    list-style-type:none;
+
+    font-family:Comic Sans MS;
+    font-size:18;
+    font-weight:bold;
+    background:#cccccc;
+
+    
+}
+
+.repeater-item {
+    min-height:210px;
+    width:95%;
+    margin: 2px auto;
+
+}
+
+.lbl 
+{
+    float: left;  
+    width:100px;
+
+    clear:left;
+    margin: 0;
+
+}
+
+.clearfloat {
+    clear:both;
+}
+
+
+.col 
+{
+    float:left;
+    width:48%;    
+    margin: 20px 10px;
+
+}
+
+fieldset
+{
+    margin: 10px;
+    min-width:1000px;
+}
+
+legend 
+{
+    font-weight:bold;
+    font-size:larger;
+}
+
+.vld 
+{
+    float: left; 
+    max-width:140px;
+}
+
+.txt-sm
+{
+    float: left; 
+    width:200px;
+}
