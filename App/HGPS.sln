@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HGPS.App", "HGPS.App\HGPS.App.csproj", "{9F9FF9D5-5A88-4385-A6C0-F993F5F2C871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HGPS.Core", "HGPS.Core\HGPS.Core.csproj", "{FADAE07D-DE20-4837-B742-BB0C9DCCE401}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HGPS.Data", "HGPS.Data\HGPS.Data.csproj", "{6D9EC836-96D2-402E-AFFF-FB7F58F01A1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F9FF9D5-5A88-4385-A6C0-F993F5F2C871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F9FF9D5-5A88-4385-A6C0-F993F5F2C871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F9FF9D5-5A88-4385-A6C0-F993F5F2C871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F9FF9D5-5A88-4385-A6C0-F993F5F2C871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FADAE07D-DE20-4837-B742-BB0C9DCCE401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADAE07D-DE20-4837-B742-BB0C9DCCE401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADAE07D-DE20-4837-B742-BB0C9DCCE401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADAE07D-DE20-4837-B742-BB0C9DCCE401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D9EC836-96D2-402E-AFFF-FB7F58F01A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D9EC836-96D2-402E-AFFF-FB7F58F01A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D9EC836-96D2-402E-AFFF-FB7F58F01A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D9EC836-96D2-402E-AFFF-FB7F58F01A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
