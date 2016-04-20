@@ -38,7 +38,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,18 +65,69 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ModelsEF\HgpsDbEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HgpsDbEntities.edmx</DependentUpon>
+      <LastGenOutput>HgpsDbEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelsEF\HgpsDbEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HgpsDbEntities.edmx</DependentUpon>
+      <LastGenOutput>HgpsDbEntities.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelsEF\Customer.cs">
+      <DependentUpon>HgpsDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelsEF\Event.cs">
+      <DependentUpon>HgpsDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelsEF\HgpsDbEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HgpsDbEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelsEF\HgpsDbEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HgpsDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelsEF\HgpsDbEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HgpsDbEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelsEF\lkLocationType.cs">
+      <DependentUpon>HgpsDbEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelsEF\Location.cs">
+      <DependentUpon>HgpsDbEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="ModelsEF\HgpsDbEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HgpsDbEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ModelsEF\HgpsDbEntities.edmx.diagram">
+      <DependentUpon>HgpsDbEntities.edmx</DependentUpon>
+    </Content>
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
