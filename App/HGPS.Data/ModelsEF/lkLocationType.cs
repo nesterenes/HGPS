@@ -16,5 +16,7 @@ namespace HGPS.Data.ModelsEF
     {
         public int Id { get; set; }
         public string LocationType { get; set; }
+    
+        public virtual Location Location { get; set; }
     }
 }

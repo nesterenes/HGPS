@@ -14,6 +14,11 @@ namespace HGPS.Data.ModelsEF
     
     public partial class Location
     {
+        public Location()
+        {
+            this.Events = new HashSet<Event>();
+        }
+    
         public int Id { get; set; }
         public System.Guid Guid { get; set; }
         public string LocationName { get; set; }
@@ -33,5 +38,10 @@ namespace HGPS.Data.ModelsEF
         public string Longitude { get; set; }
         public int PremiumLevel { get; set; }
         public Nullable<int> CustomerId { get; set; }
+        public int IsActive { get; set; }
+    
+        public virtual Customer Customer { get; set; }
+        public virtual ICollection<Event> Events { get; set; }
+        public virtual lkLocationType lkLocationType { get; set; }
     }
 }

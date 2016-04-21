@@ -14,6 +14,11 @@ namespace HGPS.Data.ModelsEF
     
     public partial class Customer
     {
+        public Customer()
+        {
+            this.Locations = new HashSet<Location>();
+        }
+    
         public int Id { get; set; }
         public int Role { get; set; }
         public string BusinessName { get; set; }
@@ -26,5 +31,7 @@ namespace HGPS.Data.ModelsEF
         public string Phone { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+    
+        public virtual ICollection<Location> Locations { get; set; }
     }
 }

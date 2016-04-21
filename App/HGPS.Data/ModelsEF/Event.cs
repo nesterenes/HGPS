@@ -15,12 +15,14 @@ namespace HGPS.Data.ModelsEF
     public partial class Event
     {
         public int Id { get; set; }
-        public string LocationId { get; set; }
+        public int LocationId { get; set; }
         public int Year { get; set; }
         public System.DateTime Date { get; set; }
         public string AltDate { get; set; }
         public string Hours { get; set; }
         public string Price { get; set; }
         public string GroupPriceDetail { get; set; }
+    
+        public virtual Location Location { get; set; }
     }
 }
