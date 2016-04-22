@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using HGPS.Data.ModelsEF;
+using HGPS.Core.Models;
 
 namespace HGPS.Core
 {
@@ -10,6 +11,9 @@ namespace HGPS.Core
             // --------------------------------------------------------
             // TO MODEL OBJECTS
             // --------------------------------------------------------
+
+            AutoMapper.Mapper.CreateMap<Location, LocationModel>();
+            AutoMapper.Mapper.CreateMap<Customer, CustomerModel>();
 
             //AutoMapper.Mapper.CreateMap<ActivityLog, ActivityLogModel>()
             //    .ForMember(dest => dest.DateOccurred, opts => opts.MapFrom(src => src.DateOccurred.ToString("MM/dd/yyyy")));
